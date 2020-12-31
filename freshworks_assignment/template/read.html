@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>read</title>
+</head>
+<body>
+<h1><B>READ OPERATION</B></h1>
+{% block content %}
+<form action="read" method="post" autocomplete="off">
+    {%csrf_token %}
+    Enter filepath :<input type="text" name="filename" placeholder="with extension"><br>
+    Enter key      :<input type="text" name="key" placeholder="'_all' to read all keys">[use',' to more than one key]<br>
+    <input type="submit" value="read">
+</form>
+{% endblock %}
+</body>
+</html>

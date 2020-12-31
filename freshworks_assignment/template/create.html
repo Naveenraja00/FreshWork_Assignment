@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File creation</title>
+</head>
+<body>
+<h1><B>CREATING FILE</B></h1>
+{% block content %}
+<form action="create" method="POST" autocomplete="off">
+    {% csrf_token %}
+    Enter filepath:<input type="text" name="filepath" placeholder="press '.' for current dir"><br>
+    Enter filename:<input type="text" name="filename" placeholder="with extension"><br>
+    Type "yes" to write :<input type="text" name="check"><br>
+    <input type="submit" value="create">
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>write</title>
+</head>
+<body>
+<h1><B>WRITE OPERATION</B></h1>
+{% block content %}
+<form action="write" method="post" autocomplete="off">
+    {% csrf_token %}
+    Enter filepath:<input type="text" name="filename" placeholder="with extension"><br>
+    Enter key:<input type="text" name="key" maxlength="32" placeholder=" Only alphabats upto 32 character"><br>
+    Enter expire time:<input type="number" name="time" placeholder="optional '0' for permanent"><br>
+    Enter Reg no.:<input type="number" name="reg" maxlength="15"><br>
+    Enter DOB:<input type="date" name="dob" min="1900-01-01" max="2049-12-31" ><br>
+    Enter Branch:<input type="text" name="branch"><br>
+    Enter Email:<input type="email" name="email"><br>
+    Enter MobileNo:<input type="text" name="mob" pattern="[0-9]{10}" maxlength="10"><br>
+    <input type="submit" value="write">
+</form>
+{% endblock %}
+</body>
+</html>

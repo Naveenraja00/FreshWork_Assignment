@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<h1><B>LOGIN</B></h1>
+{% block content %}
+<form action="logverify" method="post" autocomplete="off">
+    {% csrf_token %}
+    USERNAME:<input type="text" name="username" size="25">default(admin)<br>
+    PASSWORD:<input type="password" name="password" size="25">default(admin)<br>
+    <input type="submit" value="Login">
+</form>
+Didn't have account<a href="register">REGISTER</a>
+<div>
+    {% for i in messages %}
+    {{i}}<br>
+    {% endfor %}
+</div>
+{% endblock %}
+</body>
+</html>

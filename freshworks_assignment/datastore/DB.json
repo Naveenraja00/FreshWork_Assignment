@@ -1,0 +1,20 @@
+{
+   "raja": {
+      "register": "9843734",
+      "name": "raja",
+      "DOB(mm-dd-yyyy)": "2021-01-01",
+      "branch": "cse",
+      "email": "afas@hmail.com",
+      "mob": "7349458234",
+      "exp": 0
+   },
+   "naveenraja": {
+      "register": "4127493",
+      "name": "naveenraja"
+      "DOB(mm-dd-yyyy)": "12-18-2000",
+      "branch": "cse",
+      "email": "nrfaaja@gmail.com",
+      "mob": "8423642847",
+      "exp": 0
+  }
+}

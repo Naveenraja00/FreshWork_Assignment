@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<h1><B>SELECT OPERATION</B></h1>
+{% block content %}
+<form action="crud" method="post" autocomplete="off">
+    {% csrf_token %}
+    1.CREATEFILE<br>2.WRITE<br>3.READ<br>4.DELETE<br>5.LOGOUT<br>
+    <input type="submit" name="enter" value="Enter"><br><input type="text" name="op" maxlength="1">
+
+</form>
+<div>
+    {% for i in messages %}
+    {{i}}<br>
+    {% endfor %}
+</div>
+{% endblock %}
+
+</body>
+</html>

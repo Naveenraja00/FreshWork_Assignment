@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+</head>
+<body>
+<h1><B>REGISTER</B></h1>
+{% block content %}
+<form action="register" method="post" autocomplete="off">
+    {% csrf_token %}
+    Username:<input type="text" name="username"><BR>
+    First_name:<input type="text" name="firstname" ><BR>
+    Last_name:<input type="text" name="lastname"><BR>
+    email:<input type="email" name="email"><BR>
+    Password:<input type="password" name="password"><BR>
+    Conformpass:<input type="password" name="conform_pass"><BR>
+    <input type="submit" value="register">
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+   "admin": {
+      "name": "admin",
+      "password": "admin"
+   },
+   "naveenraja": {
+      "username": "naveenraja",
+      "firstname": "naveen",
+      "lastname": "raja",
+      "email": "naveenraja@gmail.com",
+      "password": "13032000"
+   }
+}
