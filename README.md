@@ -1,5 +1,4 @@
-# FreshWorks_Assignment
-Local datastore (BACKEND)
+# Local datastore (BACKEND)
 
 DEVELOPED ON:
        
