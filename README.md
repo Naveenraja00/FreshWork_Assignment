@@ -10,7 +10,7 @@ DONE BY:
       
      L.NAVEENRAJA
  
- ASSIGNMENT DETAILS: 
+ Requirements: 
  
      Buliding a file based "KEY-VALUE" data store that supports the basic CRD(Create,Read,Delete) operation.
      The file which has act as DB is located in Local storage.The JSON DB File named as 'DB.json' will be inside 
